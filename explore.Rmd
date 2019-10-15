@@ -1,0 +1,28 @@
+---
+title: "Exploratory Data Analysis"
+author: Timothy Hanneman
+output: github_document
+---
+
+A variable is a quantity, quality, or property that you can measure.
+A value is the state of a variable when you measure it. Values change.
+An Observation is a set of measurements made under similar conditions.
+
+Tabular data is a set of values, each associated with the variable and an observation. 
+Tabular data is tidy if each value is placed in its own "cell", each variable in its own column, and each observation in its own row.
+
+Variation is the tendency of the values of a variable to change from measurement to measurement.
+Categorical variables can only take one of a small set of values. (saved as factors, or character vectors) Use a Bar chart!
+
+```{r}
+library(tidyverse)
+ggplot(data = diamonds) +
+  geom_bar(mapping = aes(x = cut))
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
